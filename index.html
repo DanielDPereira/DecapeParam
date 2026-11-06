@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Segurança: a página só carrega scripts/estilos da própria pasta e NÃO pode fazer nenhuma requisição de rede
+     (sem connect-src, sem frames, sem formulários). Funciona 100% offline. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+<title>DecapeParam — Parâmetros de decape SA01</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23262626'/%3E%3Ccircle cx='16' cy='16' r='8' fill='none' stroke='white' stroke-width='3'/%3E%3Cpath d='M8 24 24 8' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+<header class="topo">
+  <div class="marca">
+    <span class="logo"><img id="logo-img" src="img/logo-aptiv.webp" alt="Aptiv"><span id="logo-texto" class="logo-texto oculto">APTIV</span></span>
+    <div>
+      <h1>DecapeParam</h1>
+      <p>Máquina SA01 · Semi Auto — parâmetros de decape</p>
+    </div>
+  </div>
+  <nav id="abas" class="abas" role="tablist" aria-label="Seções do programa"></nav>
+  <div id="estado-armazenamento" class="estado" role="status"></div>
+</header>
+<div id="avisos"></div>
+<main id="conteudo" tabindex="-1">
+  <noscript><p class="faixa faixa-erro">Este programa precisa de JavaScript ativo no navegador.</p></noscript>
+  <p class="carregando">Carregando…</p>
+</main>
+<div id="toasts" class="toasts" aria-live="polite"></div>
+
+<script src="js/nucleo.js"></script>
+<script src="js/dados-iniciais.js"></script>
+<script src="js/banco.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/estado.js"></script>
+<script src="js/tela-receitas.js"></script>
+<script src="js/tela-paineis.js"></script>
+<script src="js/tela-gerar.js"></script>
+<script src="js/tela-dados.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
